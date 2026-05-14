@@ -1,28 +1,33 @@
-import { Check } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const plans = [
   {
-    name: "Личный",
+    name: "Базовый",
     price: "Бесплатно",
-    description: "Для тех, кто начинает путь осознанной продуктивности",
-    features: ["Неспешное управление задачами", "Ежедневная сессия фокуса", "Еженедельные размышления", "Доступ в приложении"],
+    description: "Для тех, кто хочет открыть мир традиций",
+    features: [
+      "100+ обычаев и традиций",
+      "50+ суеверий двух стран",
+      "Сравнительные статьи",
+      "Доступ с любого устройства",
+    ],
     cta: "Начать бесплатно",
     highlighted: false,
   },
   {
-    name: "Профи",
-    price: "990 ₽",
+    name: "Полный",
+    price: "490 ₽",
     period: "/мес",
-    description: "Для тех, кто готов углубить практику",
+    description: "Для глубокого погружения в культуру",
     features: [
-      "Всё из тарифа Личный",
-      "Безлимитные сессии фокуса",
-      "Расписание часов тишины",
-      "Мягкая аналитика",
-      "Синхронизация с календарём",
-      "Приоритетная поддержка",
+      "Всё из Базового",
+      "500+ материалов с историей",
+      "Редкие региональные обычаи",
+      "Интерактивные карты традиций",
+      "Аудио-рассказы и легенды",
+      "Новые материалы каждую неделю",
     ],
-    cta: "Начать путь",
+    cta: "Открыть полный доступ",
     highlighted: true,
   },
 ];
@@ -32,9 +37,9 @@ export function Pricing() {
     <section id="pricing" className="py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
-          <span className="text-sm uppercase tracking-widest text-amber mb-4 block">Тарифы</span>
+          <span className="text-sm uppercase tracking-widest text-amber mb-4 block">Доступ</span>
           <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground mb-4 text-balance">
-            Простые и честные цены
+            Выберите свой путь
           </h2>
           <p className="text-muted-foreground text-lg">Без скрытых платежей. Отмена в любой момент.</p>
         </div>
@@ -65,7 +70,7 @@ export function Pricing() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <Check size={18} className="text-sage" />
+                    <Icon name="Check" size={18} className="text-sage" />
                     <span className={plan.highlighted ? "text-primary-foreground/90" : "text-foreground"}>
                       {feature}
                     </span>

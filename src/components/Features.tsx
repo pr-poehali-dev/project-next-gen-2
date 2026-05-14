@@ -1,25 +1,25 @@
-import { Clock, Layers, Moon, Sparkles } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const features = [
   {
-    icon: Clock,
-    title: "Неспешное планирование",
-    description: "Тайм-блоки, которые уважают ваши естественные ритмы. Между задачами всегда есть время на паузу.",
+    icon: "BookOpen",
+    title: "Обычаи двух народов",
+    description: "Свадебные, праздничные, застольные — сотни живых обычаев России и Британии с историей их происхождения.",
   },
   {
-    icon: Layers,
-    title: "Фокус на текущем",
-    description: "Видите только то, что важно сейчас. Остальное терпеливо ждёт, пока вы будете готовы.",
+    icon: "Sparkles",
+    title: "Суеверия и приметы",
+    description: "Чёрная кошка, разбитое зеркало, стук по дереву — разбираем, откуда берутся суеверия и что за ними стоит.",
   },
   {
-    icon: Moon,
-    title: "Часы тишины",
-    description: "Автоматические периоды покоя, которые защищают ваше время глубокой работы от отвлечений.",
+    icon: "Calendar",
+    title: "Праздничные традиции",
+    description: "Масленица и Guy Fawkes Night, Рождество и Старый Новый год — как два народа отмечают главные события года.",
   },
   {
-    icon: Sparkles,
-    title: "Мягкая аналитика",
-    description: "Вдумчивые наблюдения за вашими паттернами — без осуждения, с поддержкой.",
+    icon: "Globe",
+    title: "Сравнительный взгляд",
+    description: "Параллели и различия: одинаковые суеверия с разными объяснениями, схожие ритуалы из разных эпох.",
   },
 ];
 
@@ -28,9 +28,9 @@ export function Features() {
     <section id="features" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <span className="text-sm uppercase tracking-widest text-terracotta mb-4 block">Возможности</span>
+          <span className="text-sm uppercase tracking-widest text-terracotta mb-4 block">Что внутри</span>
           <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground text-balance">
-            Инструменты, дарящие покой
+            Народная мудрость двух культур
           </h2>
         </div>
 
@@ -41,7 +41,7 @@ export function Features() {
               className="group p-8 md:p-10 rounded-2xl bg-card border border-border hover:border-sage/30 transition-colors duration-500"
             >
               <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6 group-hover:bg-sage/20 transition-colors duration-500">
-                <feature.icon size={24} className="text-sage" />
+                <Icon name={feature.icon} size={24} className="text-sage" />
               </div>
               <h3 className="font-serif text-2xl text-foreground mb-3">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{feature.description}</p>

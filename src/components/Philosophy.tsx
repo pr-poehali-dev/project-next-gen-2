@@ -7,36 +7,36 @@ export function Philosophy() {
           <div className="relative aspect-[4/5] bg-muted rounded-lg overflow-hidden">
             <img
               src="/minimal-scandinavian-workspace-with-natural-light-.jpg"
-              alt="Спокойное рабочее пространство"
+              alt="Традиции и культура"
               className="w-full h-full object-cover"
             />
             {/* Decorative accent */}
             <div className="absolute bottom-6 left-6 right-6 p-6 bg-background/90 backdrop-blur-sm rounded-lg">
               <p className="text-sm text-muted-foreground italic">
-                «Когда жизнь и работа движутся в гармонии, лучшие идеи не просто появляются — они текут сами собой.»
+                «Традиции — это не прошлое. Это живая память народа, которая говорит с нами каждый день.»
               </p>
             </div>
           </div>
 
           {/* Right: Text content */}
           <div className="flex flex-col gap-8">
-            <span className="text-sm uppercase tracking-widest text-sage">Наша философия</span>
+            <span className="text-sm uppercase tracking-widest text-sage">О проекте</span>
             <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground leading-tight text-balance">
-              Осознанная работа и тихий фокус
+              Культура через призму традиций
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Hvile родился из простого наблюдения: самая значимая работа редко происходит среди постоянных
-                уведомлений и бесконечных списков задач. Она рождается в моменты тишины.
+                Русский человек не свистит в доме — чтобы деньги не уходили. Британец не открывает зонт в помещении —
+                это к беде. Разные народы, но одна и та же мудрость: уважение к невидимым силам, которые управляют жизнью.
               </p>
               <p>
-                Мы создали инструмент, который уважает ритм глубокой работы — создаёт пространство для концентрации,
-                рефлексии и того сосредоточенного внимания, которое превращает обычные задачи в мастерство.
+                Этот проект — путешествие сквозь века народной памяти. Мы собрали обычаи, традиции и суеверия двух великих культур,
+                чтобы показать: за непохожестью скрывается удивительное родство.
               </p>
             </div>
             <div className="pt-4">
               <a href="#features" className="inline-flex items-center gap-2 text-foreground group">
-                <span className="border-b border-foreground pb-0.5">Наш подход</span>
+                <span className="border-b border-foreground pb-0.5">Что внутри</span>
                 <span className="text-terracotta group-hover:translate-x-1 transition-transform duration-300">→</span>
               </a>
             </div>
